@@ -21,8 +21,14 @@ body{
 }
 
 .logo{
+<<<<<<< HEAD
     width: 20vw;
 }
+=======
+    text-align: center;
+}
+
+>>>>>>> origin/main
 
 .nav-bar-big img{
     width: 100%;
