@@ -8,11 +8,14 @@
     --wrapper-padding: 40px;
     --form-width: 200px;
     --field-height: 40px;
+    --field-width: 400px;
+    --form-container-width: 500px;
 }
 
 #wrapper{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: rgb(242,242,254);
     padding: var(--wrapper-padding);
     height: 100vh;
@@ -49,18 +52,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: var(--form-container-width);
     height: 100%;
 }
 
 #sign-in{
     display: flex;
     flex-direction: column;
-    width: var(--form-width);
     gap: 20px;
+    text-align: center;
 }
 
 #sign-in > input {
     height: var(--field-height);
+    width:  var(--field-width);
 }
 
 
