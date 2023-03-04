@@ -1,3 +1,6 @@
+body{
+    margin: 40px;
+}
 
 .container{
     display: flex;
@@ -11,14 +14,39 @@
     align-items: center;
 }
 
-.logo img{
-    width: 20%;
-    justify-content: center;
+.nav-bar-big i{
+    font-size: 3vw;
+    margin-left: 10px;
+    
+}
+
+.logo{
+    width: 20vw;
+}
+
+.nav-bar-big img{
+    width: 100%;
 }
 
 
+.nav-bar-small{
+    display: none;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.ps4, .ps5, .switch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
   
-  
+.item{
+    width: 30%;
+}
   
   
   
