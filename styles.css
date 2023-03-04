@@ -1,6 +1,6 @@
 body{
-    background-color: #DADAF2;
-    font-family: Lora;
+    background-color: rgba(3, 7, 252, 0.05);
+    font-family: 'Libre Baskerville', serif;
 }
 
 .container{
@@ -23,7 +23,7 @@ body{
 }
 
 .logo{
-    width: 20vw;
+    width: 23vw;
 }
 
 .nav-bar-big img{
