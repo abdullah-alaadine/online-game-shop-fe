@@ -7,6 +7,7 @@ body{
     margin: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .nav-bar-big{
@@ -33,6 +34,12 @@ body{
 
 .nav-bar-small{
     display: none;
+}
+
+.gallery{
+    width: 80%;
+    align-self: center;
+    margin-top: 50px;
 }
 
 .gallery img{
