@@ -2,14 +2,20 @@
     margin: 0;
 }
 
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+
 :root{
     --icon-font: 3rem;
     --logo-height: 7rem;
-    --wrapper-padding: 40px;
+    --wrapper-padding: 2%;
     --form-width: 200px;
     --field-height: 40px;
     --field-width: 400px;
     --form-container-width: 500px;
+    --form-btn-height: 55px;
+    --form-btn-width: 105px;
 }
 
 #wrapper{
@@ -59,13 +65,31 @@
 #sign-in{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    text-align: center;
+    align-items: center;
+}
+
+#sign-in > h1 {
+    margin-bottom: 10%;
 }
 
 #sign-in > input {
     height: var(--field-height);
     width:  var(--field-width);
+    margin-bottom: 2.5%;
+}
+
+#sign-in > a{
+    align-self: flex-start;
+    margin-bottom: 11%;
+}
+
+
+#sign-in > button {
+    height: var(--form-btn-height);
+    width: var(--form-btn-width);
+    background: rgb(0,1,79);
+    color: white;
+    border-radius: 20px;
 }
 
 
