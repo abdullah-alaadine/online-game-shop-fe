@@ -60,6 +60,22 @@ body{
     transform: scale(1.1);
 }
 
+.gallery i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+  
+.prev{
+    left:80px;
+}
+
+.next{
+    right:80px;
+}
+
 .ps4, .ps5, .switch{
     display: flex;
     flex-direction: column;
@@ -86,6 +102,8 @@ body{
     width: 21%;
     margin-top: 20px;
 }
+
+
 
 .item img{
     border-radius: 5%;
@@ -179,7 +197,7 @@ body{
 
     .item p{
         font-size: 20px;
-        margin-top: 25px;
+        margin-top: 35px;
     }
 }
 
