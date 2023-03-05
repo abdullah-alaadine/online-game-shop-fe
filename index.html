@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/1fea503669.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <script src="javascripts/index.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascripts/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Shop</title>
 </head>
@@ -14,9 +14,10 @@
     <div class="container">
         <section class="nav-bar">
             <div id="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                <a href="all_products.html"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
+
             <div class="logo">
                 <img src="images/logo-no-background.png" alt="">
             </div>
@@ -25,7 +26,11 @@
                 <i class="fa-solid fa-cart-shopping"></i>           
             </div>  
         </section>
-        
+
+        <div class="search-bar hidden" id="search_item">
+            <input type="text" id="search-input" placeholder="Search...">
+        </div>
+
         <div class="gallery">
             <div class="slide">
                 <img src="images/top-bg/ps-background.webp" alt="">
