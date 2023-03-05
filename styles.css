@@ -24,6 +24,7 @@ body{
     margin-left: 10px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    color: rgba(0, 0, 0, 0.8)
 }
 
 .nav-bar i:hover{
@@ -103,7 +104,7 @@ body{
     border-radius:20px;
     width: 100%;
     height: 40px;
-    background-color: #00014F;
+    background-color: #0084CE;
     color: #F0F0FF;
     transition: all 0.2s ease-in-out;
 }
@@ -129,7 +130,7 @@ body{
 
 .footer{
     height: 200px;
-    background-color: #00014F;
+    background-color: #0084CE;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +139,7 @@ body{
 }
 
 .footer input{
-    background-color: #00014F;
+    background-color: #0084CE;
     border: none;
     border-bottom: solid 1px #F0F0FF;
     margin-bottom: 10px;
@@ -207,7 +208,7 @@ body{
     border-radius:20px;
     width: 100%;
     height: 40px;
-    background-color: #00014F;
+    background-color: #0084CE;
     color: #F0F0FF;
     transition: all 0.2s ease-in-out;
     margin-top: 30px;
@@ -220,6 +221,7 @@ body{
 .desc{
     text-align: justify;
     line-height: 30px;
+    color: rgba(0,0,0,0.5);
 }
 
 
