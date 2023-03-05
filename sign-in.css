@@ -16,6 +16,7 @@ body{
     --form-container-width: 500px;
     --form-btn-height: 55px;
     --form-btn-width: 105px;
+    --form-btn-size: 16px;
 }
 
 #wrapper{
@@ -90,6 +91,7 @@ body{
     background: rgb(0,1,79);
     color: white;
     border-radius: 20px;
+    font-size: var(--form-btn-size)
 }
 
 
