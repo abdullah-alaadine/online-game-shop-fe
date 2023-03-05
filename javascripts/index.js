@@ -54,10 +54,12 @@ const item_buttons = document.querySelectorAll('.add-to-cart-btn')
 
 item_buttons.forEach(button => {
     button.addEventListener('click', () => {
-        const parentDiv = button.parentNode;
-        const parentId = parentDiv.id;
-        console.log(parentId);
+        get_id(button)
     })
 })
-
+function get_id(element){
+    const parentDiv = element.parentNode;
+    const parentId = parentDiv.id;
+    console.log(parentId);
+}
 }
