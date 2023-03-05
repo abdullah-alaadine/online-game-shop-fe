@@ -17,6 +17,7 @@ body{
     --form-btn-height: 55px;
     --form-btn-width: 105px;
     --form-btn-size: 16px;
+    --input-btn-size: 1rem;
 }
 
 #wrapper{
@@ -77,11 +78,15 @@ body{
     height: var(--field-height);
     width:  var(--field-width);
     margin-bottom: 2.5%;
+    font-size: var(--input-font-size);
 }
 
 #sign-in > a{
-    align-self: flex-start;
     margin-bottom: 11%;
+}
+
+.forgot-anchor{
+    align-self: flex-start;
 }
 
 
@@ -91,8 +96,8 @@ body{
     background: rgb(0,1,79);
     color: white;
     border-radius: 20px;
-    font-size: var(--form-btn-size)
+    font-size: var(--form-btn-size);
+    margin-bottom: 2.5%;
 }
-
 
 
