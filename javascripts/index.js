@@ -30,9 +30,24 @@ function next_image() {
     timer = setInterval(next_image, 3000);
 }
 
-prev_btn.addEventListener('click', prev_image);
-next_btn.addEventListener('click', next_image);
+prev_btn.addEventListener('click', prev_image)
+next_btn.addEventListener('click', next_image)
+timer = setInterval(next_image, 3000)
 
-timer = setInterval(next_image, 3000);
+const search_icon = document.getElementById('search_icon')
+const search_bar = document.querySelector('.search-bar')
+let search_input = document.getElementById('search-input')
+
+search_icon.addEventListener('click', toggle_search_bar)
+
+function toggle_search_bar() {
+    search_bar.classList.toggle('hidden')
+    search_input.addEventListener('input', search)
+
+    function search() {
+        
+        console.log(`Searching for: ${search_input.value}`)
+    }
+}
 
 }

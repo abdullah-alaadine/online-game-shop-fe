@@ -31,6 +31,16 @@ body{
     transform: scale(1.2);
 }
 
+.search-bar {
+    display: flex;
+    justify-self: left;
+    align-self: flex-start;
+}
+
+.hidden {
+    display: none;
+}
+
 .logo{
     width: 23vw;
 }
@@ -39,10 +49,6 @@ body{
     width: 100%;
 }
 
-
-.nav-bar-small{
-    display: none;
-}
 
 .gallery{
     width: 80%;
@@ -93,7 +99,6 @@ body{
     margin-top: 50px;
 }
 
-
 .item{
     display: flex;
     flex-direction: column;
@@ -102,7 +107,6 @@ body{
     width: 21%;
     margin-top: 20px;
 }
-
 
 
 .item img{
