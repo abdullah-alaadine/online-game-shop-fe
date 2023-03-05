@@ -113,6 +113,10 @@ body{
     transform: scale(1.05);
 }
 
+.item p,h3{
+    font-size: 1.2vw;
+}
+
 .view button{
     margin-top: 50px;
     border: solid 1px #000;
@@ -171,6 +175,11 @@ body{
     .item{
         width: 80%;
         margin-top: 50px;
+    }
+
+    .item p{
+        font-size: 20px;
+        margin-top: 25px;
     }
 }
 
