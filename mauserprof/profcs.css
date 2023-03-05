@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Söhne, ui-sans-serif, system-ui,
+    Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif,
+    Helvetica Neue, Arial, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+::placeholder {
+  color: white;
+}
+
+#sideBar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 20%;
+  height: 100vh;
+  padding-top: 5px;
+  padding-left: 10px;
+  background-color: #0084ce;
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+}
+
+#sideBar a {
+  margin-top: 4px;
+}
+
+/* include in a child tag ^*/
+
+.sidetop {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 95%;
+  border: solid 1px rgba(255, 255, 255, 0.627);
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  margin-left: -1px;
+}
+
+.sidetop input {
+  background-color: #202123;
+  cursor: pointer;
+  border: none;
+  color: white;
+  width: 95%;
+  font-size: normal;
+}
+
+.sidetop input:focus {
+  outline: none;
+}
+
+
+
+.menuoption {
+  overflow-y: hidden;
+  padding-bottom: 15px;
+
+}
+
+
+
+
+.menuTab {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: flex-start;
+  padding-top: 5px;
+  margin: 10px;
+  margin-left: 0px;
+  color: white;
+  opacity: 80%;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+
+.menuTab button:hover {
+  background-image: linear-gradient(to bottom, #202123 70%, white);
+}
+
+
+.sidebarButtons {
+
+  text-align: left;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: normal;
+  overflow-x: hidden;
+}
+
+
+
+.lowerMenu {
+  border-top: solid beige 1px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 45%;
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: flex-start;
+  color: white;
+  opacity: 80%;
+  white-space: nowrap;
+  padding: 2px;
+  margin: 2px;
+}
+
+
+
+
+
+
+#mainSection {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  width: 80%;
+  background-color: #F0F0FF;
+  color: black;
+  overflow-x: hidden;
+  padding-bottom: 1vh;
+
+}
+
+.title {
+  display: flex;
+  margin-top: 6%;
+  margin-bottom: 4%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+
