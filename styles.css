@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgba(3, 7, 252, 0.05);
+    background-color: #E6E6FF;
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -130,6 +130,26 @@ body{
 .footer{
     height: 200px;
     background-color: #00014F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #E6E6FF;
+}
+
+.footer input{
+    background-color: #00014F;
+    border: none;
+    border-bottom: solid 1px #E6E6FF;
+    margin-bottom: 10px;
+}
+
+.footer button{
+    border: none;
+    background-color: #E6E6FF;
+    width: 20vw;
+    height: 30px;
+    border-radius: 20px;
 }
 
 
