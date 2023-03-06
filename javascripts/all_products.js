@@ -11,6 +11,13 @@ axios.get("http://localhost:8000/api/products")
         item_product.forEach(prod => {
             prod.addEventListener('click', () => {
                 get_id(prod)
+                axios.get(`http://localhost:8000/api/products/${get_id(prod)}`)
+                    .then((res)=> {
+                        localStorage.setItem("product", JSON.stringify(res.data))
+                        console.log(res.data)
+                        location.replace("./product.html");
+                    })
+                    .catch(err=> console.log(err));
             })
         })
         item_buttons.forEach(button => {
