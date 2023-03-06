@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    
+
 axios.get("http://localhost:8000/api/products")
     .then((res) => {
         res.data.forEach(elem => {
@@ -75,6 +75,12 @@ function create_item(id, url, name, price){
     h3.textContent = price
 
     var button = document.createElement("button")
+    button.addEventListener("click", () => {
+        axios.post("http://localhost:8000/api/orders", {
+            user_id: JSON.parse(localStorage.getItem("user_id")),
+            product_id: id
+        }).ther();
+    })
 
     button.textContent = "Add To cart"
     button.setAttribute("class", "add-to-cart-btn")

@@ -22,6 +22,7 @@ window.onload = function() {
         let url = "http://localhost:8000/api/signup"
         axios.post(url, data).then( function(res){
             location.replace("./index.html");
+            localStorage.setItem("user_id", res.data.user.id);
         }).catch(err => {
             alert(err.response.data.message);
         })
