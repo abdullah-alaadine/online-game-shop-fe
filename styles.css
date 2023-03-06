@@ -256,4 +256,64 @@ body{
 }
 
 
-  
+  /* Sign in Sign up CSS */
+
+.signin{
+    max-width: 500px;
+    width: 100%;
+    background: #0084CE;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.signin .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.signin .form{
+    width: 100%;
+}
+
+.signin .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.signin .form .inputfield label{
+    width: 200px;
+    color: #fec107;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.signin .form .inputfield .register_input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.signin .form .inputfield p{
+    font-size: 14px;
+    color: #fec107;
+}
+
+.signin .form .inputfield .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+

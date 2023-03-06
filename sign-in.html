@@ -5,33 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/1fea503669.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="sign-in.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Sign-in</title>
 </head>
 <body>
-    <div id="wrapper">
-        <div id="nav">
+    <div class="container">
+        <section class="nav-bar">
             <div id="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                <a href="all_products.html"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="logo">
-                <img src="images/logo-no-background.png" alt="">
+                <a href="index.html"><img src="images/logo-no-background.png" alt=""></a>
             </div>
-            <div class="user">
+            <div class="sign-in">
                 <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-bag-shopping"></i>            
+                <i class="fa-solid fa-cart-shopping"></i>           
             </div>  
+        </section>
+
+        <div class="search-bar hidden" id="search_item">
+            <input type="text" id="search-input" placeholder="Search...">
         </div>
-        <div class="form-container">
-            <form id="sign-in">
-                <h1>Log In</h1>
-                <input type="email" name="user_email"/>
-                <input type="password" name="user_password"/>
-                <a href="#">forgot your password?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
+        
+        <section class="signin">
+            <div class="title">
+                <h1>REGISTER TO LEARN</h1>
+            </div>
+      
+            <div class="form">
+                <div class="inputfield">
+                    <label>First Name</label>
+                    <input type="text" class="register_input" id="f_name">
+                </div>  
+      
+                <div class="inputfield">
+                    <label>Last Name</label>
+                    <input type="text" class="register_input" id="l_name">
+                </div>
+      
+                <div class="inputfield">
+                    <label>Email Address</label>
+                    <input type="text" class="register_input" id="e_mail">
+                </div>
+      
+                <div class="inputfield">
+                    <label>Password</label>
+                    <input type="password" class="register_input" id="pass_code">
+                </div>  
+      
+                <div class="inputfield">
+                    <label>Confirm Password</label>
+                    <input type="password" class="register_input" id="re_pass_code">
+                </div> 
+      
+                <div class="inputfield">
+                    <input type="submit" value="Register" class="btn" id="register_btn">
+                </div>
+            </div>
+        </section>
     </div>
     
 </body>
