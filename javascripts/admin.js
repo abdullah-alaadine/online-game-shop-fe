@@ -19,6 +19,18 @@
     addressesSection.style.display = 'none';
     paymentsSection.style.display = 'none';
     adminSection.style.display ='none';
+
+    const add_button = document.getElementById('add_button');
+    add_button.addEventListener('click', get_infos)
+
+    function get_infos(event){
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const description = document.getElementById('description').value;
+      const url = document.getElementById('url').value;
+      const price = document.getElementById('price').value;
+      console.log(name, description, url, price)
+    }
   });
 
   ordersButton.addEventListener('click', () => {
