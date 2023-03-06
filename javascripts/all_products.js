@@ -2,7 +2,6 @@ window.onload = function() {
 const search_icon = document.getElementById('search_icon')
 const search_bar = document.querySelector('.search-bar')
 let search_input = document.getElementById('search-input')
-
 search_icon.addEventListener('click', toggle_search_bar)
 
 function toggle_search_bar() {
@@ -37,37 +36,35 @@ function get_id(element){
     return parentId
 }
 
-function create_item(){
-    var items_div = document.getElementsByClassName("items")[0];
-    console.log(items_div);
-    var item_div = document.createElement("div");
-    item_div.setAttribute("class", "item");
+function create_item(id, url, name, price){
+    var items_div = document.getElementsByClassName("items")[0]
+    console.log(items_div)
+    var item_div = document.createElement("div")
+    item_div.setAttribute("class", "item")
+    item_div.setAttribute("id", id)
 
-    var img = document.createElement("img");
+    var img = document.createElement("img")
 
-    img.setAttribute("src", "images/ps4-games/spiderman.webp");
-    img.setAttribute("class", "item_product");
+    img.setAttribute("src", url, name)
+    img.setAttribute("class", "item_product")
 
-    var p = document.createElement("p");
+    var p = document.createElement("p")
+    p.textContent = name
 
-    p.textContent = "Spiderman - Playstation 4";
+    var h3 = document.createElement("h3")
+    h3.textContent = price
 
-    var h3 = document.createElement("h3");
+    var button = document.createElement("button")
 
-    h3.textContent = "$ 50.00 USD";
+    button.textContent = "Add To cart"
+    button.setAttribute("class", "add-to-cart-btn")
 
-    var button = document.createElement("button");
+    item_div.appendChild(img)
+    item_div.appendChild(p)
+    item_div.appendChild(h3)
+    item_div.appendChild(button)
 
-    button.textContent = "Add To cart";
-    button.setAttribute("class", "add-to-cart-btn");
-
-    item_div.appendChild(img);
-    item_div.appendChild(p);
-    item_div.appendChild(h3);
-    item_div.appendChild(button);
-
-    items_div.appendChild(item_div);
-    
+    items_div.appendChild(item_div)
 }
-create_item()
+
 }
