@@ -23,6 +23,7 @@ window.onload = function() {
         axios.post(url, data).then( function(res){
             location.replace("./index.html");
             localStorage.setItem("user_id", res.data.user.id);
+            localStorage.setItem("token", res.data.token);
         }).catch(err => {
             alert(err.response.data.message);
         })
