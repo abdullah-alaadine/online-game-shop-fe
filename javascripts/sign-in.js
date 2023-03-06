@@ -8,13 +8,21 @@ window.onload = function() {
         password = document.getElementById('password').value
         console.log(email, password)
 
-        data = new FormData()
-        data.append('email', email)
-        data.append('password', password)
+        // const data = new FormData()
+        // data.append('email', email)
+        // data.append('password', password)
 
-        let url = ""
+        const data = {
+            email,
+            password
+        };
+
+
+        let url = "http://localhost:8000/api/login";
         axios.post(url, data).then( function(res){
-            
+            //--> ! <--
+        }).catch(err => {
+            alert(err.response.data.message);
         })
     }
 
