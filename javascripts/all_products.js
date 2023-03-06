@@ -36,4 +36,38 @@ function get_id(element){
     console.log(parentId);
     return parentId
 }
+
+function create_item(){
+    var items_div = document.getElementsByClassName("items")[0];
+    console.log(items_div);
+    var item_div = document.createElement("div");
+    item_div.setAttribute("class", "item");
+
+    var img = document.createElement("img");
+
+    img.setAttribute("src", "images/ps4-games/spiderman.webp");
+    img.setAttribute("class", "item_product");
+
+    var p = document.createElement("p");
+
+    p.textContent = "Spiderman - Playstation 4";
+
+    var h3 = document.createElement("h3");
+
+    h3.textContent = "$ 50.00 USD";
+
+    var button = document.createElement("button");
+
+    button.textContent = "Add To cart";
+    button.setAttribute("class", "add-to-cart-btn");
+
+    item_div.appendChild(img);
+    item_div.appendChild(p);
+    item_div.appendChild(h3);
+    item_div.appendChild(button);
+
+    items_div.appendChild(item_div);
+    
+}
+create_item()
 }
