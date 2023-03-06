@@ -4,22 +4,26 @@ window.onload = function() {
     submit.addEventListener('click', check)
 
     function check(){
-        full_name = document.getElementById('f_name').value
-        email = document.getElementById('e_mail').value
-        password = document.getElementById('pass_code').value
-        conf_password = document.getElementById('conf_pass_code').value
+        const name = document.getElementById('f_name').value
+        const email = document.getElementById('e_mail').value
+        const password = document.getElementById('pass_code').value
+        const password_confirmation = document.getElementById('conf_pass_code').value
 
-        console.log(email, password)
+        const data = {
+            email,
+            password,
+            name,
+            password_confirmation
+        }
+        console.log(password, password_confirmation)
+        console.log(password === password_confirmation)
 
-        data = new FormData()
-        data.append('email', email)
-        data.append('password', password)
-        data.append('full_name', full_name)
-        data.append('conf_password', conf_password)
 
-        let url = ""
+        let url = "http://localhost:8000/api/signup"
         axios.post(url, data).then( function(res){
-            
+            location.replace("");
+        }).catch(err => {
+            alert(err.response.data.message);
         })
     }
 
