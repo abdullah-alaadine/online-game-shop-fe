@@ -1,4 +1,3 @@
-
   const profileButton = document.getElementById('profile-button');
   const ordersButton = document.querySelector('#orders-button');
   const addressesButton = document.querySelector('#addresses-button');
@@ -30,9 +29,22 @@
       const url = document.getElementById('url').value;
       const price = document.getElementById('price').value;
       console.log(name, description, url, price)
+      return {name, description, url, price};
     }
+
+
+    const adminButton = document.getElementById("adminButton");
+    adminButton.addEventListener("click", () => {
+      axios.post("http://localhost:8000/api/products", get_infos(), {
+        headers: {
+            'Authorization': 'Bearer ' + localStorage.getItem("token")
+          }
+    })
+    })
   });
 
+
+  
   // ordersButton.addEventListener('click', () => {
   //   // Hide all sections
   //   profileSection.style.display = 'none';
