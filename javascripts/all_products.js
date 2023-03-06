@@ -1,10 +1,24 @@
 window.onload = function() {
 
+    
 axios.get("http://localhost:8000/api/products")
     .then((res) => {
         res.data.forEach(elem => {
             create_item(elem.id, elem.url, elem.name, elem.price);
         })
+        const item_buttons = document.querySelectorAll('.add-to-cart-btn');
+        const item_product = document.querySelectorAll('.item_product')
+        item_product.forEach(prod => {
+            prod.addEventListener('click', () => {
+                get_id(prod)
+            })
+        })
+        item_buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                get_id(button);
+            })
+        })
+
     }).catch(err => {
         console.log(err)
     })
@@ -24,20 +38,9 @@ function toggle_search_bar() {
     }
 }
 
-const item_buttons = document.querySelectorAll('.add-to-cart-btn')
-const item_product = document.querySelectorAll('.item_product')
 
-item_buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        get_id(button)
-    })
-})
 
-item_product.forEach(prod => {
-    prod.addEventListener('click', () => {
-        get_id(prod)
-    })
-})
+
 
 function get_id(element){
     const parentDiv = element.parentNode;
@@ -48,7 +51,7 @@ function get_id(element){
 
 function create_item(id, url, name, price){
     var items_div = document.getElementsByClassName("items")[0]
-    console.log(items_div)
+    // console.log(items_div)
     var item_div = document.createElement("div")
     item_div.setAttribute("class", "item")
     item_div.setAttribute("id", id)
