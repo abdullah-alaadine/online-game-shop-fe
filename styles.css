@@ -315,7 +315,7 @@ body{
 
 /*admin CSS*/
 body {
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
   
   .admin-container {

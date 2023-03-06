@@ -53,7 +53,7 @@ cart.addEventListener("click", () => {
     }, {
         headers: {
             'Authorization': 'Bearer ' + localStorage.getItem("token")
-            }
+        }
     }).then();
 })
 
