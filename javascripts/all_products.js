@@ -47,7 +47,14 @@ function toggle_search_bar() {
 
 const cart = document.getElementById("cart");
 cart.addEventListener("click", () => {
-    location.replace("./")
+    axios.post("http://localhost:8000/api/orders", {
+        user_id: JSON.parse(localStorage.getItem("user_id")),
+        product_id: product.id
+    }, {
+        headers: {
+            'Authorization': 'Bearer ' + localStorage.getItem("token")
+            }
+    }).then();
 })
 
 
