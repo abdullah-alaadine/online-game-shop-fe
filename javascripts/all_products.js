@@ -79,7 +79,7 @@ function create_item(id, url, name, price){
         axios.post("http://localhost:8000/api/orders", {
             user_id: JSON.parse(localStorage.getItem("user_id")),
             product_id: id
-        })
+        }).ther();
     })
 
     button.textContent = "Add To cart"
