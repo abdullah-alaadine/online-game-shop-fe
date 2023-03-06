@@ -261,7 +261,6 @@ body{
 .signin{
     max-width: 500px;
     width: 100%;
-    background: rgba(0, 132, 206, 0.3);
     margin: 50px auto;
     padding: 30px;
     border-radius: 20px;
@@ -306,8 +305,8 @@ body{
     padding: 8px 10px;
     font-size: 15px; 
     border: 0px;
-    background-color:#F0F0FF;
-    color: #000;
+    background-color:#0084CE;
+    color: #fff;
     cursor: pointer;
     border-radius: 3px;
 }
