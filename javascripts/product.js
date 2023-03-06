@@ -6,7 +6,11 @@ window.onload = function(){
         axios.post("http://localhost:8000/api/orders", {
             user_id: JSON.parse(localStorage.getItem("user_id")),
             product_id: product.id
-        }).ther();
+        }, {
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem("token")
+              }
+        }).then();
     })
     updateProduct(product.url, product.name, product.price, product.description);
     localStorage.removeItem("product");
