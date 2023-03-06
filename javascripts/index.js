@@ -1,4 +1,30 @@
 window.onload = function() {
+
+    axios.get("http://localhost:8000/api/products")
+    .then((res) => {
+        const item_buttons = document.querySelectorAll('.add-to-cart-btn');
+        const item_product = document.querySelectorAll('.item_product')
+        item_product.forEach(prod => {
+            prod.addEventListener('click', () => {
+                get_id(prod)
+                axios.get(`http://localhost:8000/api/products/${get_id(prod)}`)
+                    .then((res)=> {
+                        localStorage.setItem("product", JSON.stringify(res.data))
+                        console.log(res.data)
+                        location.replace("./product.html");
+                    })
+                    .catch(err=> console.log(err));
+            })
+        })
+        item_buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                get_id(button);
+            })
+        })
+
+    }).catch(err => {
+        console.log(err)
+    })
 const images = ['images/top-bg/ps-background.webp', 'images/top-bg/playstation-games-bg.png', 'images/top-bg/gow-bg.jpg']
 const slide = document.querySelector('.slide img')
 const prev_btn = document.querySelector('.prev')
