@@ -4,10 +4,10 @@ This is an E-Commerce about that sells video games, it is made in HTML, CSS, Jav
 
 # Team Members
 
--James Mahfouz
--Abdullah Alaadine
--Muhamad Ali
--Abbas Hachem
+- James Mahfouz
+- Abdullah Alaadine
+- Muhamad Ali
+- Abbas Hachem
 
 # Color Palette
 
