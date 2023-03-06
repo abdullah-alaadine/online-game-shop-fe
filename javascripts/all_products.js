@@ -45,7 +45,10 @@ function toggle_search_bar() {
     }
 }
 
-
+const cart = document.getElementById("cart");
+cart.addEventListener("click", () => {
+    location.replace("./")
+})
 
 
 
