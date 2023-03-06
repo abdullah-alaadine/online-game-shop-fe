@@ -1,6 +1,6 @@
 # Brief
 
-This is an E-Commerce about that sells video games, it is made in HTML, CSS, JavaScript, PHP, and MySQL database, it has a register and login pages that takes you to the cover page, where you can see the highlighted items, you can see all the products in the all products page, the user can also add to his carts products by clicking on products.
+This is an E-Commerce about that sells video games, it is made in HTML, CSS, JavaScript, PHP, and MySQL database, it has a register and login pages that takes you to the cover page, where you can see the highlighted items, you can see all the products in the all products page, the user can also add to his carts products by clicking on products, he can also click on the image of the item to display the information.
 
 # Team Members
 
