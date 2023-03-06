@@ -32,3 +32,13 @@ These are the user stories that exited us to make the website:
 **AS** As an Admin
 **I want to** let a lot of people know what I have
 **So that** I bring more customers
+
+# website overview
+
+| Image Location        |         Image         |
+| :-------------------- | :-------------------: |
+| Cover Page            |    ![](cover.png)     |
+| Cover page Content    | ![](covercontent.png) |
+| Page of every product |  ![](allproduct.png)  |
+| Sign-In Page          |    ![](Signin.png)    |
+| Admin Panel           |    ![](admin.png)     |
