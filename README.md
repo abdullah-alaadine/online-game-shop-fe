@@ -35,10 +35,10 @@ These are the user stories that exited us to make the website:
 
 # website overview
 
-| Image Location        |         Image         |
-| :-------------------- | :-------------------: |
-| Cover Page            |    ![](cover.png)     |
-| Cover page Content    | ![](covercontent.png) |
-| Page of every product |  ![](allproduct.png)  |
-| Sign-In Page          |    ![](Signin.png)    |
-| Admin Panel           |    ![](admin.png)     |
+| Image Location        |                   Image                    |
+| :-------------------- | :----------------------------------------: |
+| Cover Page            |     ![cover](images/readme/cover.png)      |
+| Cover page Content    | ![content](images/readme/covercontent.png) |
+| Page of every product | ![products](images/readme/allproduct.png)  |
+| Sign-In Page          |    ![singnin](images/readme/Signin.png)    |
+| Admin Panel           |     ![admin](images/readme/admin.png)      |
