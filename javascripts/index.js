@@ -36,8 +36,8 @@ timer = setInterval(next_image, 3000)
 
 const search_icon = document.getElementById('search_icon')
 const search_bar = document.querySelector('.search-bar')
-let search_input = document.getElementById('search-input')
 
+let search_input = document.getElementById('search-input')
 search_icon.addEventListener('click', toggle_search_bar)
 
 function toggle_search_bar() {

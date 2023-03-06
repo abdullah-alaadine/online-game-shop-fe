@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1fea503669.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Product</title>
+    <script src="javascripts/product.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Shop</title>
 </head>
 <body>
     <div class="container">
         <section class="nav-bar">
             <div id="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                <a href="all_products.html"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="logo">
-                <img src="images/logo-no-background.png" alt="">
+                <a href="index.html"><img src="images/logo-no-background.png" alt=""></a>
             </div>
             <div class="sign-in">
-                <i class="fa-solid fa-user"></i>
+                <a href="sign-in.html"><i class="fa-solid fa-user"></i></a>
                 <i class="fa-solid fa-cart-shopping"></i>           
             </div>  
         </section>
-    </div>
 
+        <div class="search-bar hidden" id="search_item">
+            <input type="text" id="search-input" placeholder="Search...">
+        </div>
+    </div>
     <div class="product_container">
         <div class="left">
             <img src="images/ps5-games/hogwarts.webp" alt="">

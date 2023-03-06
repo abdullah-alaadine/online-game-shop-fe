@@ -261,7 +261,7 @@ body{
 .signin{
     max-width: 500px;
     width: 100%;
-    background: #0084CE;
+    background: rgba(0, 132, 206, 0.3);
     margin: 50px auto;
     padding: 30px;
     border-radius: 20px;
@@ -286,7 +286,7 @@ body{
 
 .signin .form .inputfield label{
     width: 200px;
-    color: #fec107;
+    color: rgba(0, 0, 0, 0.8);
     margin-right: 10px;
     font-size: 14px;
 }
@@ -294,16 +294,11 @@ body{
 .signin .form .inputfield .register_input{
     width: 100%;
     outline: none;
-    border: 1px solid #d5dbd9;
+    border: 1px solid #F0F0FF;
     font-size: 15px;
     padding: 8px 10px;
     border-radius: 3px;
     transition: all 0.3s ease;
-}
-
-.signin .form .inputfield p{
-    font-size: 14px;
-    color: #fec107;
 }
 
 .signin .form .inputfield .btn{
@@ -311,8 +306,8 @@ body{
     padding: 8px 10px;
     font-size: 15px; 
     border: 0px;
-    background:  #fec107;
-    color: #fff;
+    background-color:#F0F0FF;
+    color: #000;
     cursor: pointer;
     border-radius: 3px;
 }
