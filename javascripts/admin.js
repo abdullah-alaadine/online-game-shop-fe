@@ -33,14 +33,14 @@
     }
   });
 
-  ordersButton.addEventListener('click', () => {
-    // Hide all sections
-    profileSection.style.display = 'none';
-    ordersSection.style.display = 'block';
-    addressesSection.style.display = 'none';
-    paymentsSection.style.display = 'none';
-    adminSection.style.display ='none';
-  });
+  // ordersButton.addEventListener('click', () => {
+  //   // Hide all sections
+  //   profileSection.style.display = 'none';
+  //   ordersSection.style.display = 'block';
+  //   addressesSection.style.display = 'none';
+  //   paymentsSection.style.display = 'none';
+  //   adminSection.style.display ='none';
+  // });
 
   addressesButton.addEventListener('click', () => {
     // Hide all sections
