@@ -1,4 +1,14 @@
 window.onload = function() {
+
+axios.get("http://localhost:8000/api/products")
+    .then((res) => {
+        res.data.forEach(elem => {
+            create_item(elem.id, elem.url, elem.name, elem.price);
+        })
+    }).catch(err => {
+        console.log(err)
+    })
+
 const search_icon = document.getElementById('search_icon')
 const search_bar = document.querySelector('.search-bar')
 let search_input = document.getElementById('search-input')
