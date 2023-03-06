@@ -15,9 +15,6 @@ window.onload = function() {
             name,
             password_confirmation
         }
-        console.log(password, password_confirmation)
-        console.log(password === password_confirmation)
-
 
         let url = "http://localhost:8000/api/signup"
         axios.post(url, data).then( function(res){
@@ -33,14 +30,14 @@ window.onload = function() {
     const search_bar = document.querySelector('.search-bar')
     let search_input = document.getElementById('search-input')
     search_icon.addEventListener('click', toggle_search_bar)
-
+const search_item = document.getElementById()
     function toggle_search_bar() {
         search_bar.classList.toggle('hidden')
         search_input.addEventListener('input', search)
 
         function search() {
             
-            console.log(`Searching for: ${search_input.value}`)
+            // axios.get(`http://localhost:8000/products/search/${}`)
         }
 }
 }

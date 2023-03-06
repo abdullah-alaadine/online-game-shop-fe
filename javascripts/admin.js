@@ -2,7 +2,7 @@
   const ordersButton = document.querySelector('#orders-button');
   const addressesButton = document.querySelector('#addresses-button');
   const paymentsButton = document.querySelector('#payments-button');
-  const adminbutton = document.querySelector('#admin-button');
+  const adminbutton = document.querySelector('#adminButton');
 
   const profileSection = document.querySelector('#profile-section');
   const ordersSection = document.querySelector('#orders-section');
@@ -11,7 +11,7 @@
   const adminSection = document.querySelector('#admin-section');
 
   // Add event listeners to the buttons
-  profileButton.addEventListener('click', () => {
+  profileButton.addEventListener('click', (event) => {
     // Hide all sections
     profileSection.style.display = 'block';
     ordersSection.style.display = 'none';
@@ -19,10 +19,10 @@
     paymentsSection.style.display = 'none';
     adminSection.style.display ='none';
 
-    const add_button = document.getElementById('add_button');
-    add_button.addEventListener('click', get_infos)
+    const addButton = document.getElementById('addButton');
+    addButton.addEventListener('click', get_infos)
 
-    function get_infos(event){
+    function get_infos(){
       event.preventDefault();
       const name = document.getElementById('name').value;
       const description = document.getElementById('description').value;
@@ -33,13 +33,12 @@
     }
 
 
-    const adminButton = document.getElementById("adminButton");
-    adminButton.addEventListener("click", () => {
+    addButton.addEventListener("click", () => {
       axios.post("http://localhost:8000/api/products", get_infos(), {
         headers: {
             'Authorization': 'Bearer ' + localStorage.getItem("token")
-          }
-    })
+        }
+    }).then((res) => console.log(res))
     })
   });
 
